@@ -13,7 +13,6 @@ app.use(cors());
 
 router.post("/", async (req, res) => {
   const user = req.body.user;
-  console.log(user);
   const URL = `https://secure.runescape.com/m=hiscore_oldschool/index_lite.ws?player=${user}`;
   try {
     const response = await axios({
